@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>Content page title</title>
+    </head>
+    <body>
+        <header>
+            <h1>Header of Content page for test</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!--  -->
+            <form>
+                <input type="search" name="q" placeholder="Search query" />
+                <input type="submit" value="Go!" />
+            </form>
+        </nav>
+        
+        <main>
+            <article>
+                <h2>Article heading</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+                <h3>subsection</h3>
+
+                <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+                <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+
+                <h3>Another subsection</h3>
+
+                <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+                <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+
+            </article>
+            
+            <!-- Content with caption -->
+            <figure>
+              <img src="../images/wallpaper.jpg"
+                   alt="The head and torso of a dinosaur skeleton;
+                        it has a large head with long sharp teeth"
+                   width="400"
+                   height="341">
+
+              <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+            </figure>
+            <!-- For represent the usage of tag video and audio -->
+            <div style="text-align:left">
+                <video controls poster="../images/wallpaper.jpg" muted autoplay loop>
+                    <source src="../assets/video1.mp4" type="video/mp4">
+                    <source src="../assets/video1.webm" type="video/webm">
+                    <track kind="subtitles" src="../assets/transcript.vtt" srclang="en" default>
+                    <p>This video is from gihub.<a href="">ToVideoByLink</a></p>
+                </video>
+                <audio controls>
+                    <source src="../assets/audio1.mp3" type="audio/mp3">
+                    <source src="../assets/audio1.ogg" type="audio/ogg">
+                    <p>The browser doesn't support HTML5 audio feature.Here is <a href="../assets/audio1.mp3">link to the audio</a> instead.</p>
+                </audio>
+            </div>
+            <!-- the aside content can also be nested within the main content -->
+            <aside>
+                <h2>Related</h2>
+
+                <ul>
+                    <li><a href="#">Oh I do like to be beside the seaside</a></li>
+                    <li><a href="#">Oh I do like to be beside the sea</a></li>
+                    <li><a href="#">Although in the North of England</a></li>
+                    <li><a href="#">It never stops raining</a></li>
+                    <li><a href="#">Oh well...</a></li>
+                </ul>
+            </aside>
+        </main>
+        <!-- And here is our main footer that is used across all the pages of our website -->
+
+        <footer>
+          <p>©Copyright 2050 by nobody. All rights reversed.</p>
+        </footer>
+    </body>
+</html>
