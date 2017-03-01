@@ -12,9 +12,60 @@ p {
 	margin: 30px 50px 10px 100px;
 	text-shadow : -10px -10px 10px white;
 }
-
-img {
-	display : block;
-	margin : 0 auto;
+@media(min-width:800px){
+    img {
+        display : block;
+        margin : 0 auto;
+    }
 }
 
+#identifer {
+    background-color : black;
+}
+
+.topic {
+    background-size: auto
+}
+
+/* All elements with the attribute "data-vegetable"
+   are given green text */
+[data-vegetable] {
+  color: green
+}
+
+/* All elements with the attribute "data-vegetable"
+   with the exact value "liquid" are given a golden
+   background color */
+[data-vegetable="liquid"] {
+  background-color: goldenrod;
+}
+
+/* All elements with the attribute "data-vegetable",
+   containing the value "spicy", even among others,
+   are given a red text color */
+[data-vegetable~="spicy"] {
+  color: red;
+}
+
+/* Classic usage for language selection */
+[lang|=fr] {
+  font-weight: bold;
+}
+
+/* All elements with the attribute "data-vegetable" containing
+   the value "not spicy" are turned back to green */
+[data-vegetable*="not spicy"] {
+  color: green;
+}
+
+/* All elements with the attribute "data-quantity", for which
+   the value ends with "kg" */
+[data-quantity$="kg"] {
+  font-weight: bold;
+}
+
+/* All elements with the attribute "data-quantity", for which the
+   value starts with "optional" */
+[data-quantity^="optional"] {
+  opacity: 0.5;
+}

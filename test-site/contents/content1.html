@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Content page title</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
         <header>
@@ -24,7 +25,7 @@
         </nav>
         
         <main>
-            <article>
+            <article id="identifer" class="topic" lang="en">
                 <h2>Article heading</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
@@ -81,6 +82,18 @@
                 <source media="(min-width:800px)" srcset="../images/wallpaper.jpg">
                 <img src="../images/wallpaper.jpg" alt="Responsive picture">
             </picture>
+            
+            Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
+            <ul>
+              <li data-quantity="1kg" data-vegetable>Tomatoes</li>
+              <li data-quantity="3" data-vegetable>Onions</li>
+              <li data-quantity="3" data-vegetable>Garlic</li>
+              <li data-quantity="700g" data-vegetable="not spicy like chili">Red pepper</li>
+              <li data-quantity="2kg" data-meat>Chicken</li>
+              <li data-quantity="optional 150g" data-meat>Bacon bits</li>
+              <li data-quantity="optional 10ml" data-vegetable="liquid">Olive oil</li>
+              <li data-quantity="25cl" data-vegetable="liquid">White wine</li>
+            </ul>
             <!-- the aside content can also be nested within the main content -->
             <aside>
                 <h2>Related</h2>
