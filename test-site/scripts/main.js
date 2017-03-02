@@ -10,7 +10,7 @@ var myImage = document.querySelector('img');
 myImage.onclick = function () {
     var srcAttr = myImage.getAttribute('src');
     if (srcAttr === 'images/git.png') {
-        myImage.setAttribute('src', 'images/wallpaper.jpg');
+        myImage.setAttribute('src', 'images/pseudo.png');
     } else {
         myImage.setAttribute('src', 'images/git.png');
     }

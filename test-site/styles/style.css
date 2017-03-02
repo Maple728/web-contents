@@ -19,6 +19,7 @@ p {
     }
 }
 
+
 #identifer {
     background-color : black;
 }
@@ -68,4 +69,18 @@ p {
    value starts with "optional" */
 [data-quantity^="optional"] {
   opacity: 0.5;
+}
+
+p::first-letter {
+    font-size : 50px;
+    color: red;
+}
+
+p::first-line {
+    color: green;
+}
+
+p::after {
+    content : ' [in class]';
+
 }
