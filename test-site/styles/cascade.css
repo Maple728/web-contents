@@ -1,0 +1,22 @@
+/*
+Cascade order:
+    1. Importance : (!important)
+    2. Specificity : style attribute > id > [class selector, attribute selector, pseudo-class] >　[element selector, pseudo-element selector ] | sequential order
+    3. Source order
+*/
+#winner {
+    font-size:1em;
+    background-color: red !important;
+    font-family: fantasy;
+}
+
+p {
+    font-size: 2em;
+    background-color: aquamarine !important;
+    font-family: cursive !important;
+}
+
+/* universal selector */
+* {
+    
+}
