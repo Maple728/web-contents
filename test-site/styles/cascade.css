@@ -1,7 +1,8 @@
 /*
 Cascade order:
     1. Importance : (!important)
-    2. Specificity : style attribute > id > [class selector, attribute selector, pseudo-class] >　[element selector, pseudo-element selector ] | sequential order
+    2. Specificity : style attribute > id > [class selector, attribute selector, pseudo-class] 
+                        >　[element selector, pseudo-element selector ] | sequential order
         (Remark: Universal selector(*), combinators(+, >, ~, '') and pseudo-class(:not) have no effecttt on specificity)
     3. Source order
 */
@@ -19,5 +20,31 @@ p {
 
 /* universal selector */
 * {
-    
+    background-color: cornsilk;
 }
+
+/*
+    Inheritance:
+*/
+ul {
+    color: dodgerblue;
+    font-size:30px;
+}
+
+/*  inherit from parent */
+.inherit a{
+    color: inherit;
+    font-size: inherit;
+}
+/* browser have initial? initial : inherit  */
+.initial a{
+    color: initial;
+    font-size:initial;
+}
+
+/* like default value */
+.unset a{
+    color: unset;
+    font-size: unset;
+}
+
