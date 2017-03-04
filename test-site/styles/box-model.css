@@ -1,0 +1,61 @@
+* {
+    margin:0 0 10px 0;
+    background-color:antiquewhite;
+}
+
+#wrapper *{
+    background-color: blue;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 10px;   /* Invalid: percentage lengths */
+    height: 100px;          /*Invalid: percentage lengths */
+    padding: 10px;
+    font-size: 5em;   
+}
+
+#wrapper header {
+    background-clip: border-box
+}
+
+#wrapper main {
+    background-color: rgb(255,0,255);
+    background-clip: padding-box;
+}
+
+#wrapper footer {
+    background-clip: content-box;
+}
+
+#overflow *{
+    margin-bottom:120px;
+    border: 1px solid red;
+    font-size: 100px;
+    height: 100px;
+}
+
+#overflow .auto {
+    overflow:auto;
+}
+
+#overflow .hidden {
+    overflow: hidden;
+}
+
+#overflow .visible {
+    overflow: visible;
+}
+
+.inline {
+    display: inline;
+    background-color: yellow;
+}
+
+.block {
+    display: block;
+    background-color: yellow;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: yellow;
+}
