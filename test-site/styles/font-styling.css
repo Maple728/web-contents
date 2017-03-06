@@ -1,3 +1,9 @@
+@font-face {
+    font-family: my-font;
+    src: url("../font-family/Pangolin-Regular.ttf") format("truetype"), /* Select the earlier one*/
+        url("../font-family/Pangolin-Regular.woff") format("woff");
+}
+
 html {
     font-size: 10px;
 }
@@ -20,6 +26,7 @@ p {
 
 article {
     font-size: 2em;
+    font-family: my-font;
     font-weight: 500;
     text-decoration: overline;
     border: 2px solid green;
@@ -45,4 +52,38 @@ article > p:nth-child(2) {
     text-transform: lowercase;
     text-decoration: line-through;
     letter-spacing: 2px;
+}
+
+ol {
+    font-size: 3em;
+    color: white;
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+    background-image: url("../images/wallpaper.jpg");
+    background-size: 28em 6em;
+    background-repeat:no-repeat;
+    background-position: center;
+    /* list-style-image: url("../images/pseudo-class.PNG"); */
+}
+
+a:link {
+    font-size: 3em; 
+    color: black;
+}
+
+a:hover {
+    color: green;
+    cursor: cell;
+}
+
+a:visited {
+    color:aqua;
+}
+
+a:active {
+    color:fuchsia;
+}
+
+a:focus {
+    color: purple;
 }
