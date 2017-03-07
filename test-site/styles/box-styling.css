@@ -1,0 +1,42 @@
+#chip1, #chip2 {
+    width: 70%;
+    height: 200px;
+    background-color:aliceblue;
+    outline-color: black;
+    outline-style: solid;
+    outline-width: 10px;
+    border: 10px solid green;
+    padding: 5px;
+    margin-top: 10px;
+    min-width: 400px;
+    max-width: 1000px;
+}
+#chip2 {
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, white, blue 50%, white),
+        linear-gradient(to bottom, yellow, blue 50%, yellow);
+    background-position:  400px 50px, 0px 0px;
+    background-size: 500px 100px, 500px 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#chip3 {
+    width: 70%;
+    height: 200px;
+    background-color:aliceblue;
+    outline-color: darkmagenta;
+    outline-style: solid;
+    outline-width: 10px;
+    border: 10px solid green;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chip3 img {   
+    width: inherit;
+    height: inherit;
+    display: block;
+    margin:0 auto;
+}
