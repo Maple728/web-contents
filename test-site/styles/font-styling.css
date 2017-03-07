@@ -87,3 +87,21 @@ a:active {
 a:focus {
     color: purple;
 }
+
+main {
+    display:inline-block;
+    width:70%;
+}
+
+aside {
+    float: right;
+    width: 400px;
+}
+
+@media(max-width:1500px) {
+    aside {
+        float: left;
+        width: 100%;
+        display: block;
+    }
+}
